@@ -183,7 +183,7 @@ module.exports = function (grunt) {
     this.filesSrc.forEach(function (filepath) {
       var config;
       try {
-        config = c.process(filepath, grunt.config());
+        config = c.process(filepath, grunt.config);
       } catch (e) {
         grunt.fail.fatal(e);
       }
